@@ -1,0 +1,16 @@
+<D1>
+    <RECORD>
+            <NODE>XT-300</NODE>
+            <ST_DURATION>10</ST_DURATION>
+            <DT_VAL>PBM98XX</DT_VAL>
+            <ST_VAL>98987</ST_VAL>
+            <EXIST>Yes</EXIST>
+    </RECORD>       
+    <RECORD>
+            <NODE>XT-400</NODE>
+            <ST_DURATION>10</ST_DURATION>
+            <DT_VAL>CVB98XX</DT_VAL>
+            <ST_VAL>65987</ST_VAL>
+            <EXIST>Yes</EXIST>
+    </RECORD>   
+</D1>
