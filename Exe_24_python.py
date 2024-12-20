@@ -23,8 +23,23 @@
 
 #################
 
-# Code Here
+data = [[9, 3], [20, 5], [42, 6, 4.5], [78, 0], [2, 3], 0, 16, None]
+matched_value = 0
 
+result_lists = []
 
+for item in data:
+    if isinstance(item, list):
+        if len(item) >= 2 and item[1:2] != [0]:
+            result = item[0] // item[1]
+            if result == matched_value:
+                result_lists.append(item)
+
+        if len(item) >= 3 and item[2:3] != [0]:
+            result = item[1] / item[2]
+            if result == matched_value:
+                result_lists.append(item)
+
+print(result_lists)
 
 #################
