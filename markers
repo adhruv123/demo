@@ -1,0 +1,14 @@
+[pytest]
+markers =
+    slow: marks tests as slow (deselect with '-m "not slow"')
+    critical: marks tests as critical
+Example Slow Test:
+python
+Copy code
+import time
+
+@pytest.mark.slow
+def test_slow_serial_communication(serial_handler):
+    serial_handler.open_port("COM1", 9600)
+    time.sleep(5)  # Simulate long wait
+    serial_handler.close_port()
